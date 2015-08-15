@@ -1,0 +1,14 @@
+procedure RecursiveDFS(v)
+    Mark v as visited
+    // Visit v (pre-order)
+    for each neighbour w of v do
+        if w has not already been visited then
+            // (v, w) is a discovery edge
+            // recursively traverse w
+            RecursiveDFS(w)
+        else
+            // (v, w) is a back edge
+        end if
+    end for
+    // visit v (post-order)
+end procedure
