@@ -1,0 +1,14 @@
+procedure BFS(r)
+  Q = Empty queue
+  Enqueue r into Q
+  Mark r as visited
+  while Q is non-empty do
+    v = Dequeue(Q)
+    for each neighbour w of v do
+      if w is unvisited then
+        Mark w as visited
+        Enqueue w in Q
+      end if
+    end for
+  end while
+end procedure

@@ -1,0 +1,16 @@
+procedure GenerateBFSTree(r)
+  Q = Empty queue
+  Parent = Parent array, initialized to x
+  Enqueue r into Q
+  Parent[r] = r
+  while Q is non-empty do
+    v = Dequeue(Q)
+    for each neighbour w of v do
+      if Parent[w] = x then
+        Parent[w] = v
+        Enqueue w in Q
+      end if
+    end for
+  end while
+  return Parent
+end procedure
