@@ -1,0 +1,14 @@
+procdeure IterativeDFS(r)
+    S <- Empty Stack
+    Push r onto S
+    while S is non-empty do
+        v <- Peek(S)
+        if all neghbours of v have been visited then
+            Pop(S)
+        else
+            w <- an unvisited neighbour of v
+            /* You are visiting w */
+            Push w onto S
+        end if
+    end while
+end procedure
