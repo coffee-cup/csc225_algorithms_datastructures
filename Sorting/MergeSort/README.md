@@ -1,6 +1,6 @@
 # Merge Sort
 
-*Best: O(nlogn) Expected: O(nlogn) Worse: O(nlogn)*
+**Best**: O(nlogn) **Expected**: O(nlogn) **Worse**: O(nlogn)
 
 Divide and conquer algorithm
 
