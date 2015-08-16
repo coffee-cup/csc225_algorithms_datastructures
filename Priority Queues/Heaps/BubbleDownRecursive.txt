@@ -1,0 +1,9 @@
+procedure BubbleDown(node)
+  if node is a leaf then
+    return
+  end if
+  smallestChild <- Child of node with smaller value
+  if node.value > smallestChild.value
+    BubbleDown(smallestChild)
+  end if
+end procedure
