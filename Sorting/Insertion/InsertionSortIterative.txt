@@ -1,0 +1,15 @@
+// O(n^2) in the worst case
+// The actual running time varies depending on the structure of the input array
+procedure InsertionSortIterative(A, n)
+    B <- New array of size n
+    B[0] <- A[0]
+    for i <- i,...,n-1 do
+        k <- i
+        while k>0 and B[k-1] > A[i] do
+            B[k] <- B[k-1]
+            k <- k-1
+        end while
+        B[k] <- A[i]
+    end for
+    return B
+end procedure

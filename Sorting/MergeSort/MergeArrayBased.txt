@@ -1,0 +1,21 @@
+procedure Merge(A1, A2)
+    n1 <- Length(A1)
+    n2 <- Length(A2)
+    A <- New array of size n1 + n2
+    idx1 <- 0
+    idx2 <- 0
+    idx_out <- 0
+    while idx1 < n1 and idx2 < n2 do
+        if A1[idx1] < A2[idx2] then
+            A[idx_out] <- A1[idx1]
+            idx1 <- idx1 + 1
+        else
+            A[idx_out] <- A2[idx2]
+            idx2 <- idx2 + 1
+        end if
+        idx_out <- idx_out + 1
+    end while
+    Copy the remainder of A1 (after index idx1) into A
+    Copy the remainder of A2 (after index idx2) into A
+    return A
+end procedure

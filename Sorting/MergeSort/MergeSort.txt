@@ -1,0 +1,13 @@
+procedure MergeSort(A)
+    n <- Length(A)
+    if n=1 then
+        // An array of size 1 is already sorted
+        return
+    end if
+    n1 <- Floor(n/2)
+    n2 <- n - n1
+    Split A into two array A1 (with size n1) and A2 (with size n2)
+    MergeSort(A1)
+    MergeSort(A2)
+    Merge the sorted A1 and A2 together into A
+end procedure

@@ -1,0 +1,21 @@
+// recursivly merge 2 sorted arrays into single sorted array
+// returns sorted array
+//
+// input is linked list node to head of sorted list
+// of left and right arrays
+// head -> node -> node -> node -> tail
+procedure Merge(left, right)
+    if left = null and right = null then
+        return null
+    else if left = null then
+        return new Node(right.value, Merge(left.next, right))
+    else if right = null then
+        return new Node(left.value, Merge(left.next, right))
+    else
+        if left.value < right.value then
+            return new Node(left.value, Merge(left.next, right))
+        else
+            return new Node(right.value, Merge(left, right.next))
+        end if
+    end if
+end procedure
