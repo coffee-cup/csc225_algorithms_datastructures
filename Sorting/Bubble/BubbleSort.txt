@@ -1,14 +1,11 @@
 // O(n^2)
 procedure BubbleSort(A)
     n <- Length(A)
-    swap_made <- true
-    while swap_made do
-        swap_made <- false
+    for j <- 0,1,...,n-1 do
         for i <- 0,1,...,n-2 do
             if A[i] > A[i+1] then
                 Swap A[i] and A[i+1]
-                swap_made <- true
             end if
         end for
-    end while
+    end for
 end procedure

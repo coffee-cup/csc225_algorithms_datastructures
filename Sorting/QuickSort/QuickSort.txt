@@ -1,0 +1,22 @@
+// Expected O(nlogn)
+procedure QuickSort(S)
+    n <- Length(S)
+    if n=0 or n=1 then
+        // A sequence of size 0 or 1 is already sorted
+        return
+    end if
+    p <- A pivot value from S
+    Create empty lists L, E, and G
+    for each element x in S do
+        if x < p then
+            Add x to the end of L
+        else if x > p then
+            Add x to the end of G
+        else
+            add x to the end of E
+        end if
+    end for
+    QuickSort(L)
+    QuickSort(G)
+    S <- Concatentation of L, E, and G
+end procedure

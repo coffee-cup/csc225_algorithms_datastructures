@@ -1,0 +1,20 @@
+// Most Significat Digit (MSD) Radix Sort
+// since it starts with the most significat (leftmost) digit
+procedure MSDRadixSort(A, n, k)
+    if k < 0 then
+        return
+    end if
+    B <- Array of 10 empty lists
+    for i=0,1,...n-1 do
+        digit <- kth digit of A[i]
+        Add A[i] to the end of the list B[digit]
+    end for
+    S <- Empty list
+    for j=0,1,...,9 do
+        if len(B[j]) > 1 then
+            MSDRadixSort(B[j], length(B[j]), k-1)
+        end if
+        Append B[j] to the end of S
+    end for
+    Copy S into A
+end procedure

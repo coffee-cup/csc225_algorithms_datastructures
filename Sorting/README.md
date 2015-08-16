@@ -18,3 +18,15 @@ Sort the array by dividing it into parts, sorting the parts, then combining the 
 
 ![dandq](http://i.imgur.com/pHeKnZS.png)
 
+
+## Stable Sorting
+
+A sorting algorithm is **stable** if it guarantees that the order of equal elements is preserved
+
+## In-place algorithms
+
+![inplace](http://i.imgur.com/e1Ycreg.png)
+
+- Some sorting algorithms do all of their work 'inside' the input array.
+- Selection sort (left) does not allocate any extra arrays
+- Merge sort (right) allocates new arrays fo facilitate recursive sorting and merging
