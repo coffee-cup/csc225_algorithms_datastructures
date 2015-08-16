@@ -8,11 +8,15 @@ Any comparison-based sorting algorithm requires Omega(nlogn) operations in the w
 
 ## Selection Approach
 
+_left_
+
 Sort the array by moving one element at a time into its sorted position
 
 ![selection approach](http://i.imgur.com/NsdvK9Z.png)
 
 ## Divide and Conquer Approach
+
+_right_
 
 Sort the array by dividing it into parts, sorting the parts, then combining the sorted parts together
 
