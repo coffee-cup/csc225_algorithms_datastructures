@@ -69,4 +69,4 @@ uses two hash functions h1(k) and h2(k), where h2(k) != 0 for any k. The probe s
 
 The index checked at step i is
 
-   (h1(k) + ih2(k)) mod M
+    (h1(k) + ih2(k)) mod M
