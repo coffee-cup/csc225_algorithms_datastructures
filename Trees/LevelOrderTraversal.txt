@@ -1,0 +1,17 @@
+procedure LevelOrder(root)
+  if root = null then
+    return
+  end if
+  Q <- Empty queue
+  Enqueue root in Q
+  while Q is non-empty do
+    v <- Dequeue(Q)
+    Visit v
+    if v.left != null then
+      Enqueue v.left in Q
+    end if
+    if v.right != null then
+      Enqueue v.right in Q
+    end if
+  end while
+end procedure
