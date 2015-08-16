@@ -1,0 +1,14 @@
+// O(n^2) in all cases
+procedure SelectionSortIterative(A, n)
+    for i <- 0,...,n-2 do
+        min <- i
+        for j <- i+1,...,n-1 do
+            if A[j] < A[min] then
+                min <- j
+            end if
+        end for
+        if min != i then
+            Swap A[min] and A[i]
+        end if
+    end for
+end procedure
