@@ -4,7 +4,7 @@ A **directed acyclic graph** (DAG) is a directed graph with no directed cycles
 
 ![dag](http://i.imgur.com/42RGG9h.png)
 
-a **minimum** is a vertext with no incoming edges
+a **minimum** is a vertex with no incoming edges
 
 ![dag mins](http://i.imgur.com/eXDbcRq.png)
 
@@ -24,6 +24,8 @@ A graph may have multiple topologically sorted orderings
 
 
 ## Finding Topologically Sorted Ordering
+
+### Topologically Sort BFS
 
 ![tsa1](http://i.imgur.com/PHNGF4N.png)
 
@@ -53,7 +55,7 @@ When i is deleted, vertex b becomes a minimum
 
 The algorithm is essentially BFS with one extra condition governing when a vertex can be visited
 
-## Topological Sorting with DFS
+### Topologically Sort BFS
 
 A post-ordering of vertices in a DFS traversal is topologically sorted.
 Constructs the ordering in reverse
