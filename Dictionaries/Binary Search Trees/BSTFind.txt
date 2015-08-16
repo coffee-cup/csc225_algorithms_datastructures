@@ -1,0 +1,12 @@
+procedure BSTFInd(k, node)
+  if node = null then
+    return NOT_FOUND
+  end if
+  if node.value > k then
+    return BSTFind(k, node,left)
+  else if node,value < k then
+    return BSTFind(k, node.right)
+  else
+    return node
+  end if
+end procedure
