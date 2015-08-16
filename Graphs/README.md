@@ -37,6 +37,12 @@ A graph is **bipartite** if the vertices of G can be partitioned into sets X and
 
 ![bp2](http://i.imgur.com/CabC3Sd.png)
 
+A bipartite graph is also called **2-colourable**, since its vertices can be coloured with two colours such that no edge connects two vertices of the same colour.
+
+A **complete bipartite graph**, denoted K_m,n, consists of a set X of m vertices and set Y of n vertices, will all possible edges between the two sets
+
+![complete bp](http://i.imgur.com/N7YdIV2.png)
+
 ## Graph Representation
 
 ![graph representation](http://i.imgur.com/xXzD8T3.png)
