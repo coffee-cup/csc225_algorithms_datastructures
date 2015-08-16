@@ -1,0 +1,8 @@
+// O(n)
+procedure FactorialIterative(n)
+    result <- 1
+    for i <- 2,3,...,n do
+        result <- i * result
+    end for
+    return result
+end procedure
