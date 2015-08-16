@@ -1,0 +1,19 @@
+Input: An integer n and a function Weigh
+Output: An integer k in {1,2,...,n} such that Weigh(k) = Balanced
+
+procedure balance(n)
+  high <- n
+  low <- 1
+  while low < high do
+    k <- (high+low)/2
+    if Weigh(k) = TOO HEAVY then
+      high <- k-1
+    else if Weigh(k) = TOO LIGHT then
+      low <- k+1
+    else
+      // The weight must be equal to k
+      return k
+    end if
+  end while
+  return low
+end procedure
