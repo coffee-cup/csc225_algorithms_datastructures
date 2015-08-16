@@ -28,3 +28,7 @@ Let f(n) and g(n) be functions defined for all n >= 0. Then f(n) in Theta(g(n)) 
 
     f(n) in O(g(n))     and
     f(n) in Omega(g(n))
+
+## Facts
+
+![facts](http://i.imgur.com/GBa0tkc.png)
