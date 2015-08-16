@@ -1,0 +1,8 @@
+procedure Factorial(n)
+  if n = 1 then
+    // 1! = 1
+    return 1
+  else
+    return n*Factorial(n-1)
+  end if
+end procedure
