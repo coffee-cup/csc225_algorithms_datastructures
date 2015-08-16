@@ -32,3 +32,5 @@ Let f(n) and g(n) be functions defined for all n >= 0. Then f(n) in Theta(g(n)) 
 ## Facts
 
 ![facts](http://i.imgur.com/GBa0tkc.png)
+
+![facts2](http://i.imgur.com/F7Akb85.png)
