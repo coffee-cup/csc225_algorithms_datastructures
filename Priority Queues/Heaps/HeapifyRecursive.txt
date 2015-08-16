@@ -1,0 +1,8 @@
+procedure HeapifyRecursive(v)
+  if v = null then
+    return
+  end if
+  HeapifyRecursive(v.left)
+  HeapifyRecursive(v.right)
+  BubbleDown(v)
+end procedure

@@ -1,0 +1,7 @@
+procedure HeapifyIterative(A, n)
+  // Indexing is 1-based, so the last element is A[n]
+  for i <- n, n-1, n-2, ..., 2, 1 do
+    // Bubble-down the element at index i
+    BubbleDown(i)
+  end for
+end procedure
