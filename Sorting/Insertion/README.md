@@ -1,5 +1,7 @@
 # Insertion Sort
 
+**Best**: O(n) **Expected**: O(n^2) **Worse**: O(n^2)
+
 Insertion sort constructs the sorted ordering from the input array by inserting each element in sorted order
 
 ![insertion1](http://i.imgur.com/v1MXUrn.png)
