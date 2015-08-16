@@ -23,6 +23,8 @@
 
 - a **complete** is a graph G of n vertices with an edge between every pair of vertices
 
+![complete](http://i.imgur.com/OJaSR8J.png)
+
 - a **tree** is a connected, acyclic graph
 
 ![tree](http://i.imgur.com/YERPDC3.png)
