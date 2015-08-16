@@ -1,0 +1,9 @@
+procedureBubbleUp(node)
+  if node = root then
+    return
+  end if
+  if node.parent.value > node.value then
+    Swap node.value and node.parent.value
+    BubbleUp(node.parent)
+  end if
+end procedure

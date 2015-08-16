@@ -1,0 +1,6 @@
+procedure BubbleUp(node)
+  while node != root and node.parent.value > node.value do
+    Swap node.value and node.parent.value
+    node <- node.parent
+  end while
+end procedure
