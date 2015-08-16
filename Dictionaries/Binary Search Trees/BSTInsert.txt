@@ -1,0 +1,12 @@
+procedure BSTInsert(node, new_value)
+  if node = null then
+    new_node <- New node containing new_value
+    return new_node
+  end if
+  if node.value >= k then
+    node.left <- BSTInsert(node.left, new_value)
+  else if node.value < k then
+    node.right <- BSTInsert(node.right, new_value)
+  end if
+  return node
+end procedure
