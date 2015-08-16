@@ -1,0 +1,10 @@
+procedure BruteForceMWST(Gin)
+    G <- copy of Gin
+    while |E(G)| > n-1 do
+        Find a cycle in G (using DFS or BFS)
+        e <- Max. weight edge in cycle
+        Delete e from G
+    end while
+    // The remaining edges of G form a MWST of Gin
+    return E(G)
+end procedure
