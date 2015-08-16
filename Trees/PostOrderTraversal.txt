@@ -1,0 +1,8 @@
+procedure PostOrder(v)
+  if v = null then
+    return
+  end if
+  PostOrder(v.left)
+  PostOrder(v.right)
+  Visit v
+end procedure

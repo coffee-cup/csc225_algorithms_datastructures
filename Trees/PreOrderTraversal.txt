@@ -1,0 +1,8 @@
+procedure PreOrder(v)
+  if v = null then
+    return
+  end if
+  Visit v
+  PreOrder(v.left)
+  PreOrder(v.right)
+end procedure

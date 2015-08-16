@@ -1,0 +1,7 @@
+procedure InOrder(v)
+  if v = null then
+    return
+  end if
+  InOrder(v.left)
+  InOrder(v.right)
+end procedure
