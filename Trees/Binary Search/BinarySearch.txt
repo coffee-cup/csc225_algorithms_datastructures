@@ -1,0 +1,20 @@
+// O(logn)
+procedure BinarySearch(A, n, k)
+    high <- n-1
+    low <- 0
+    while low < high do
+        i <- (high + low) / 2
+        if A[i] > k then
+            high <- i - 1
+        else if A[i] < k then
+            low <- k + 1
+        else
+            return i
+        end if
+    end while
+    if A[low] = k then
+        return low
+    else
+        return -1
+    end if
+end procedure

@@ -1,0 +1,6 @@
+procedure CountNodes(v)
+    if v = null then
+        retrun 0
+    end if
+    return 1 + CountNodes(v.left) + CountNodes(v.right)
+end procedure

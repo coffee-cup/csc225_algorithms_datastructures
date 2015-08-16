@@ -7,7 +7,7 @@
 
 ![path](http://i.imgur.com/Z3bFsTr.png)
 
-- a **cycle** is a path of length at least 1 whcih begins and ends at the same vertex
+- a **cycle** is a path of length at least 1 which begins and ends at the same vertex
 
 ![cycle](http://i.imgur.com/ABbkmGI.png)
 
@@ -21,7 +21,7 @@
 
 ![directed](http://i.imgur.com/QZoQqtl.png)
 
-- a **complete** is a graph G of n vertices with an edge between every pair of vertices
+- a **complete** graph is a graph G of n vertices with an edge between every pair of vertices
 
 ![complete](http://i.imgur.com/OJaSR8J.png)
 

@@ -1,34 +1,43 @@
-# Trees
+# Binary Trees
 
-###Definition
+- A **binary tree** is a tree in which each node has 0, 1, or 2 children.
 
-![](http://i.imgur.com/I1nFHH2.png)
+![bt](https://i.imgur.com/y2SByhc.png)
 
-A **tree** is a **connected**, **acyclic graph**.
+- Every node in a binary tree can be considered to be the root of a smaller binary tree
 
-###Binary Tree
+![bt2](http://i.imgur.com/sv9WgQ0.png)
 
-![](http://i.imgur.com/ZoOvX1M.png)
+- A **full binary tree** is a binary tree in which every level contains the maximum number of nodes (or is empty)
 
-A **binary tree** is a tree in which each node has 0, 1, or 2 children.
+![fullbt](http://i.imgur.com/Z1Zfmxl.png)
 
-#### Full Binary Trees
+- A **complete binary tree** is a binary tree in whcih every level but the last is full, and the last level is filled in from left-to-right
 
-![](http://i.imgur.com/2KfYVO5.png)
+![completebt](https://i.imgur.com/gkBvRuM.png)
 
-A **full binary tree** is a binary tree in which every level contains the maximum number of nodes (or is empty).
+- A __propery binary tree__ is a tree in which each node has 0 or 2 children
 
-#### Complete Binary Tree
+![properbt](http://i.imgur.com/YwAgFVn.png)
 
-![](http://i.imgur.com/myVc1Jn.png)
+## Traversals
 
-A **complete  binary tree** is a binary tree in which every level but the last level is full, and the last level is filled in from left-to-right.
+A __traversal__ of a binary tree visits every node in the tree in a specific order.
 
-#### Proper Binary Trees
+### Pre-Order
 
-![](http://i.imgur.com/d9PauyW.png)
+vLR
 
-A **proper binary tree** is a tree in which each node has 0 or two children.
-A proper binary tree can be defined with an **inductive definition**:
- - A proper binary tree of height 0 is a single node
- - a proper binary tree of height 1 or greater is a node with two children, each of which is the root of a proper binary tree.
+![pre](https://i.imgur.com/HZYeGoR.png)
+
+### In-Order
+
+LvR
+
+![in](https://i.imgur.com/Eoqak86.png)
+
+### Post-Order
+
+LRv
+
+![post](https://i.imgur.com/UST6Vn6.png)
