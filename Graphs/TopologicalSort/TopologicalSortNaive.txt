@@ -1,0 +1,17 @@
+// O(n^2)
+procedure TopologicalSortNaive(G)
+    L <- Empty list
+    while |V(G)| > 0 do
+        // Find a minimum vertex v
+        v <- null
+        for each vertex w in V(G) do
+            if w has no incoming edges then
+                v <- w
+                break
+            end if
+        end for
+        Add v to the end of L
+        Delete v from G
+    end while
+    return L
+end procedure

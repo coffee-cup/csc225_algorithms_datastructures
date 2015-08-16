@@ -1,0 +1,21 @@
+// O(n+m)
+procedure TopologicalSortBFS(G)
+    L <- Empty list
+    Q <- Empty queue
+    for each vertex v in V(G) do
+        if v has no incoming edges then
+            Enqueue v in Q
+        end if
+    end for
+    while Q is non-empty do
+        v <- Dequeue(Q)
+        for each neighbour w of v do
+            if w has incoming degree 1 then
+                Enqueue w in Q
+            end if
+        end for
+        Add v to the end of L
+        Delete v from G
+    end while
+    return L
+end procedure

@@ -1,0 +1,21 @@
+procedure RecursiveDFS(G, L, v)
+    Mark v as visited
+    for each neighbour w of v do
+        if w is unvisited then
+            RecursiveDFS(G, l, w)
+        end if
+    end for
+    Add v to the front of L
+end procedure
+
+// O(n+m)
+procedure TopologicalSortDFS(G)
+    Mark all vertices of G unvisited
+    L <- Empty list
+    for each vertex v in G do
+        if v is unvisited then
+            RecursiveDFS(G, L, v)
+        end if
+    end for
+    return L
+end procedure
