@@ -1,0 +1,10 @@
+// O(nlogn)
+procedure HeapSort(A, n)
+    H <- Empty Heap
+    for i=0,1,...,n-1 od
+        H.Insert(A[i])
+    end for
+    for i=0,1,...,n-1 do
+        A[i] <- H.RemoveMin()
+    end for
+end procedure
