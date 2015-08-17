@@ -34,3 +34,15 @@ A sorting algorithm is **stable** if it guarantees that the order of equal eleme
 - Some sorting algorithms do all of their work 'inside' the input array.
 - Selection sort (left) does not allocate any extra arrays
 - Merge sort (right) allocates new arrays fo facilitate recursive sorting and merging
+
+## Best and Worst case inputs
+
+| Algorithm | Best        | Worst                             |
+|-----------|-------------|-----------------------------------|
+| Insertion | [1,2,3,4,5] | [5,4,3,2,1]                       |
+| Selection | dont matter | dm                                |
+| Merge     | dm          | dm                                |
+| Quick     | [1,1,1,1,1] | [1,2,3,4,5] if pivot is element 0 |
+| Bubble    | [1,2,3,4,5] | [5,4,3,2,1]                       |
+| Heap      | dm          | dm                                |
+| Radix     | dm          | dm                                |
