@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Heaps
 
 A **heap** is a specialized binary tree data structure with two extra properties:
