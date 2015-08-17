@@ -1,0 +1,27 @@
+class AnagramStructure
+  words <- empty list of strings
+
+  procedure Add(s)
+    add s to words
+  end procedure
+
+  procedure hasAnagrams(s)
+    return CheckAnagram("", s)
+  end procedure
+
+  procedure CheckAnagram(anagram, current_string)
+    if current_string = null then
+      return (anagram in words)
+    end if
+    for every letter in current_string do
+      anagram_copy <- copy of anagram
+      anagram_copy += letter
+      new_string <- copy of current_string
+      remove letter from new_string
+      if CheckAnagram(anagram_copy, new_string)
+        return True
+      end if
+    end for
+    return false
+  end procedure
+end class
