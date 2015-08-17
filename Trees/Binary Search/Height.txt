@@ -1,0 +1,8 @@
+procedure FindHeight(v)
+    if v = null
+        return -1
+    end if
+    h1 = FindHeight(v.left)
+    h2 = FindHeight(v.right)
+    return 1 + Max(h1, h2)
+end procedure
