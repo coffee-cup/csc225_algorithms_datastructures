@@ -1,12 +1,12 @@
 procedure MinLengthPath(G, u, v)
-  parent <- Array of length n, initialized to x.
+  parent <- Array of length n, initialized to naught.
   Q <- Empty queue
   Parent[v] <- v
   Add v to Q
   while Q is non-empty do
     x <- Dequeue(Q)
     for each neighbour y of x do
-      if Parent[y] = x then
+      if Parent[y] = naught then
         Parent[y] <- x
         Add y to Q
       end if

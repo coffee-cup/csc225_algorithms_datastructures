@@ -5,7 +5,7 @@ procedure Baruvka(G)
         Mark each component as 'unmerged'
         for each connected component C of T do
             if C has not already been merged then
-                e <- min. weight edge of G with ecactly one endpoint in C
+                e <- min. weight edge of G with exactly one endpoint in C
                 Cp <- Component at the other endpoint of e
                 Mark C and Cp as 'merged'
                 Add e to T
